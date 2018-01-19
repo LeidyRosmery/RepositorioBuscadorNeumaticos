@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Buscador de neumaticos</title>
+  <link rel="stylesheet" type="text/css" href="customCol.css">
+  <link rel="stylesheet" type="text/css" href="tireFinder.css">
+
+</head>
+
+<body cz-shortcut-listen="true">
+  <div class="mainContenier">
+    <div class="rowCustom">
+      <div class="col2-lg col2-md imgbanner hiddenSm hiddenXs">
+        <img src="bannerTop.jpg">
+      </div>
+      <div class="col10-lg col10-md">
+        <h1 class="titulo-app">Buscador de Neumáticos</h1>
+        <span class="mobileAlerta hiddenMd hiddenLg">
+            <i class="fa fa-info-circle"></i>
+            </span>
+        <p class="text-bajada hiddenXs">Utiliza la base de neumáticos Sodimac Homecenter y encuentra el modelo más apropiado para tu vehículo</p>
+        <p class="bajada-alerta hiddenSm hiddenXs"> Las opciones entregadas por el buscador corresponden a neumáticos de medidas originales del vehículo.</p>
+      </div>
+    </div>
+    <div class="rowCustom">
+      <div class=" col12-lg col12-md definedHeight">
+        <div id="searchCars" class="btnSelSearch activeSearchTires">
+          <span class="svIcon hiddenSm hiddenXs">
+                <img src="cat-automovil.svg">
+                </span>
+          <span class="txtTabs hiddenSm hiddenXs">Busca por año de tu vehículo</span>
+          <span class="txtTabs  hiddenMd hiddenLg">Busca por vehículos</span>
+          <span class="whiteBlockCar"></span>
+        </div>
+        <div id="searchTires" class="btnSelSearch ">
+          <span class="svIcon hiddenSm hiddenXs">
+                <img src="cat-neumaticos.svg">
+            </span>
+          <span class="txtTabs hiddenSm hiddenXs">Busca por medida de neumático</span>
+          <span class="txtTabs hiddenMd hiddenLg">Busca por neumáticos</span>
+          <span class="whiteBlockTire"></span>
+        </div>
+      </div>
+    </div>
+    <div class="rowCustom  searchCont">
+      <div class="col4-lg col4-md col12-sm mT-Small mB-Small">
+        <label>Marca del vehículo</label>
+        <div id="intro">
+          <select id="marca" class="DropDown_Marca">
+                    <option>Busca por marca...</option>
+                </select>
+        </div>
+      </div>
+      <div class="col4-lg col4-md col12-sm mT-Small mB-Small">
+        <label id="labelMod" class="textGrey">Modelo del vehículo</label>
+        <div id="modelo">
+          <select id="namesModelo" class="DropDown_Modelo unique" disabled="">
+                    <option>Busca tu modelo...</option>
+                </select>
+        </div>
+      </div>
+      <select id="baseNamesModelos"></select>
+      <div id="grupoDate" class="col4-lg col4-md col12-sm mT-Small mB-Small">
+        <label id="labelMed" class="textGrey">Año del vehículo</label>
+        <div id="date">
+          <select id="asignedDate" class="DropDown_Date" disabled="">
+                    <option>Busca por año...</option>
+                </select>
+        </div>
+      </div>
+      <select id="baseDate"></select>
+      <div id="grupoMedidaRW" class="col4-lg col4-md col12-sm mT-Small mB-Small">
+        <label id="labelMedRW" class="textGrey">Medida del neumático</label>
+        <div id="medidaRW">
+          <select id="asignedMedidaRW" class="DropDown_Date" disabled="">
+                    <option>Busca por medida...</option>
+                </select>
+        </div>
+      </div>
+      <select id="baseMedidaRW"></select>
+    </div>
+  </div>
+  <script type='text/javascript' src='http://www.sodimac.cl/static/script/vendor/jquery.min.js?vid=3546'></script>
+  <script type="text/javascript" src="tireFinder.js"></script>
+</body>
+
+</html>
