@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $.getJSON("data-json.json", function(e) {
+    $.getJSON("../assets/data-json.json", function(e) {
         var a = [],
             t = [],
             o = [],
